@@ -190,11 +190,11 @@ export default () => {
           <div className={activClass}>{message}</div>
           <div className="displayer-secondary">
             <div className="infoDice">
-              <span id="espace">Avec {player.habileté} dé(s), tu obtiens :</span>   
+              <span id="comb">Avec {player.habileté} dé(s), tu obtiens :</span>   
               <span id="spanbr">{resultPlayer}</span>
             </div>
             <div className="infoDice">
-              <span id="espace">Avec {foe.skill} dé(s), {foe.name} a obtenu :</span> 
+              <span id="comb">Avec {foe.skill} dé(s), {foe.name} a obtenu :</span> 
               <span id="spanbr">{resultFoe}</span>
             </div>
           </div>

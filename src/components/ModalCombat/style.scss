@@ -179,17 +179,16 @@
   }
   .player,
   .foe {
-    height: 400px;
+    font-size: .8em;
+    height: 300px;
     &-descr {
-      height: 170px;
+      height: 80px;
     }
     &-name {
-      height: 190px;
+      height: 45px;
     }
     &-carac {
-      height: 100%;
       &_avatar {
-        margin: 0;
       }
       &_contains {
         &-comp {
@@ -204,9 +203,7 @@
     }
   }
 }
-
-@media only screen and (max-width: 768px) {
-  #espace {
-    height: 30px;
-  }
+.comb {
+  margin: 0;
 }
+
