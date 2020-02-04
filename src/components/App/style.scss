@@ -7,7 +7,7 @@
   filter: blur(5px);
 }
 .launchers {
-  width: 50%;
+  width: 90%;
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 1em;
@@ -56,6 +56,18 @@
     width: 100%;
       &-bot {
         font-size: .8em;
+        padding: .3em;
+        // font-size: 1em;
+        width: 160px;
+        }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .launchers {
+    width: 100%;
+    flex-direction: column;
+      &-bot {
       }
   }
 }

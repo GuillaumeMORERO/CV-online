@@ -173,6 +173,14 @@ export default () => {
           >
             Fight !!!
           </button>
+          <button
+            className="btncenter-fight"
+            type="button"
+            onClick={() => handleClose()}
+            style={{display: player.blindage <= 0 ? 'none' : '' }}
+          >
+            Fuite !!!
+          </button>
         </div>
 
       </Modal.Body>

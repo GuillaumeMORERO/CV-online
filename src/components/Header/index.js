@@ -37,8 +37,12 @@ export default ({ datas }) => {
   >
 
     <Navbar expand="lg" variant="dark" bg="none" className="eader-barre-lateral">
-      <Navbar.Brand href="/" className="eader-barre_lien">Choisir un autre Pirate / Recommencer</Navbar.Brand>
-      <Navbar.Brand href="#cv" className="eader-barre_lien">CV</Navbar.Brand>
+      <Navbar.Brand href="/" className="eader-barre_lien">Recommencer</Navbar.Brand>
+      <DropdownButton id="dropdown-basic-button" bsPrefix="poly" title="CV/Elem">
+        {datas.map((item) => (
+          <Dropdown.Item key={item.id} className="poly-ancre" href={'#section' + item.id}> {item.id}.{item.titreCarte}</Dropdown.Item>
+        ))}
+      </DropdownButton>
     </Navbar>
 
     <div className="eader-titre1" onClick={() => { contactModalDiplayer()} }>
@@ -48,11 +52,7 @@ export default ({ datas }) => {
     </div>
 
     <Navbar expand="lg" variant="dark" bg="none" className="eader-barre-lateral">
-      <DropdownButton id="dropdown-basic-button" bsPrefix="poly" title="CV/Elem">
-        {datas.map((item) => (
-          <Dropdown.Item key={item.id} className="poly-ancre" href={'#section' + item.id}> {item.id}.{item.titreCarte}</Dropdown.Item>
-        ))}
-      </DropdownButton>
+      <Navbar.Brand href="#cv" className="eader-barre_lien">CV</Navbar.Brand>
       <Navbar.Brand href="#sheet" className="eader-barre_lien">Fiche</Navbar.Brand>
     </Navbar>
 

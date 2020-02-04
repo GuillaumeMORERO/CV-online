@@ -36,5 +36,16 @@
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .liensContact {
+    display: flex;
+    flex-direction: column;
+    &-high {
+      margin-bottom: 1em;
+      padding: .2em;
+    }
+  }
+}
+
 
 

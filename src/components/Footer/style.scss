@@ -4,7 +4,7 @@
  @import 'src/styles/vars-custom';
 
 .footer {
-  width: 60%;
+  width: 70%;
   display: flex;
   align-self: center;
   justify-self: center;
@@ -35,9 +35,23 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .footer {
     font-size: .8em;
-    width: 80%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .footer {
+    width: 100%;
+  }
+  .liens {
+    width: 100%;
+    font-size: .8em;
+    &-low {
+      padding: 0;
+      margin: .5em .2em 0 .2em;
+    }
   }
 }

@@ -52,7 +52,7 @@
 }
 .btncenter {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 1em;
   &-fight {
     color: white;
@@ -166,5 +166,47 @@
   #espace {
     margin: 0 0 1em;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .combat {
+    &-titre {
+      &-txt {
+        font-size: 1.2em;
+      }
+    }
+  }
+  .player,
+  .foe {
+    height: 400px;
+    &-descr {
+      height: 170px;
+    }
+    &-name {
+      height: 190px;
+    }
+    &-carac {
+      height: 100%;
+      &_avatar {
+        margin: 0;
+      }
+      &_contains {
+        &-comp {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .infoBuy {
+    &-close {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #espace {
+    height: 30px;
   }
 }

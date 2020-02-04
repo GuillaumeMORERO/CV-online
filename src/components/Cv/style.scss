@@ -119,17 +119,16 @@
     width: 100%;
   }
   .teteAccordion {
-    font-size: .8em;
-  }
-  .launchers {
-    width: 100%;
-      &-bot {
-      padding: .3em;
-      font-size: 1em;
-      width: 180px;
+    font-size: .6em;
+    &-titrecarte {
+      
     }
   }
+  .min {
+    font-size: .6em;
+  }
+}
 
-  
-  
+@media only screen and (max-width: 768px) {
+
 }

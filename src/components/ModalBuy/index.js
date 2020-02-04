@@ -108,6 +108,13 @@ export default ({ datas }) => {
         </Modal.Body>
 
         <Modal.Footer className="buy-pied">
+          <button
+            className="btncenter-fight infoBuy-close"
+            type="button"
+            onClick={() => handleClose()}
+          >
+            Fermer !!
+          </button>
           <div className={activClass}>{message}</div>
         </Modal.Footer>
       </Modal>

@@ -188,7 +188,7 @@ margin-bottom: 0;
 
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1620px) {
   .sheet {
     width: 90%;
   }
@@ -233,3 +233,45 @@ margin-bottom: 0;
   }
 }
 
+@media only screen and (max-width: 550px) {
+  .hud {
+    &-descr {
+      width: 100%;
+    }
+    &-carac {
+      width: auto;
+      &_title {
+        padding: 0;
+      }
+      &_display {
+        padding: 0;
+        &-cadre {
+          margin-top: .5em;
+        }
+      }
+    }
+    &-notice {
+      width: 80%;
+    }
+    &-icon {
+      width: 4em;
+      padding: 1em;
+      margin: 1em;
+    }
+  }
+  .separateur {
+    flex-direction: column;
+    &-1 {
+      flex-direction: column;
+    }
+    &-3 {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  .tunedModal {
+    &-txt {
+      font-size: 1.1em;
+    }
+  }
+}
