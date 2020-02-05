@@ -32,7 +32,7 @@ export default ({ pirates }) => {
   };
 
   const activeClass = ClassNames( 
-    'home',
+    'mainContainer',
     {
       blured: show || contactShow
     }
@@ -83,9 +83,10 @@ export default ({ pirates }) => {
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="0">
             <img className="frame" src="src/data/framehigh.png" alt="framehigh"/>
-            <div className="teteAccordion-rules">
+            <div className="x">
               <h1
-                className="teteAccordion-rules-hun titrerules"
+                className="teteAccordion"
+                id="titrerules"
                 >
                 Voici les Régles.... Car oui, il en faut même ici !
               </h1>
@@ -96,7 +97,7 @@ export default ({ pirates }) => {
         
         <Accordion.Collapse eventKey="0">
           <Card.Body>
-            <h2 className="titreaccord-rules titrerules">
+            <h2 className="teteAccordion" id="titrerules">
               Voici une liste simple des bonnes conduites à tenir :
             </h2>
             <ListGroup>
@@ -141,9 +142,9 @@ export default ({ pirates }) => {
                 <Card className="carte" key={pirate.id}>
                   <div className="carte-toop">
                     <Card.Img className="carte-toop_avatar" variant="top" src={pirate.avatar} />
-                    <Card.Body className="carte-toop_carac">
-                      <Card.Title className="carte-toop_carac-titre"> {pirate.name} </Card.Title>
-                      <ListGroup className="carte-toop_carac-liste">
+                    <Card.Body className="carte-toop_caracteristic">
+                      <Card.Title className="carte-toop_caracteristic-titre"> {pirate.name} </Card.Title>
+                      <ListGroup className="carte-toop_caracteristic-liste">
                         <ListGroup.Item><Card.Text>Habileté : <span>{pirate.skill}</span></Card.Text></ListGroup.Item>
                         <ListGroup.Item><Card.Text>Blindage : <span>{pirate.blindage}</span></Card.Text></ListGroup.Item>
                         <ListGroup.Item><Card.Text>{pirate.descr}</Card.Text></ListGroup.Item>

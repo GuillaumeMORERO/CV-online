@@ -10,21 +10,7 @@ const initialState = {
   descr: ''
 };
 
-// function entierAleatoire(min, max) {
-//   return Math.floor(Math.random() * (max - min + 1)) + min;
-// };
-// const nbrAleatoire = entierAleatoire(1, 6);
-// console.log('log du reducer :', nbrAleatoire);
-
-// const encounter = foes[entierAleatoire(0, foes.length - 1)];
-
 export default (state = initialState, action) => {
-  // console.log('reducer[votes] >>', action);
-  // console.log('state :', state);
-  // console.log('nom d\'un state :', state.nom);
-  // console.log('action.type :', action.type );
-  // console.log('action.value :', action.value );
-
   switch (action.type) {
     case CHARGE_FOE: {
       return {

@@ -123,13 +123,18 @@
         flex-direction: column;
         width: 75px;
       }
+      &_lien {
+        font-size: .8em;
+      }
     }
     &-titre2 {
-      // text-align: center;
-      font-size: 1.2em;
+      font-size: .9em;
     }
     &-titre1 {
       width: 60%;
     }
+  }
+  .poly {
+    font-size: .8em
   }
 }

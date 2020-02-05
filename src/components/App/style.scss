@@ -6,6 +6,85 @@
 .blured {
   filter: blur(5px);
 }
+.mainContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-margin-top: 6em;
+  margin-top: 4em;
+  background-color: $transparent-black;
+  box-shadow: $customBoxShadow;
+  border-radius: 10px;
+}
+.pic {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+  &-arrow {
+    &_left {
+    transform: rotate(90deg);
+      &-siz {
+        transform: rotate(90deg);
+        width: 15%;
+      }
+    }
+    &_right {
+      transform: rotate(270deg);
+        &-siz {
+          transform: rotate(270deg);
+          width: 15%;
+        }
+      }
+  }
+  &-ture {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    &_head {
+      width: 240px;
+    }
+  }
+}
+.teteAccordion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  &-titrecarte{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5em;
+  }
+}
+.list {
+  &-group {
+    border: none;
+    &-item {
+      border: none;
+      background-color: transparent;
+      color: white;
+      text-align: center;
+    }
+  }
+}
+.min {
+  font-size: .5em;
+  margin: 0 2em 0 2em;
+}
+.btn {
+  &-link {
+    &:hover {
+      text-decoration: none;
+    }
+    &:not(:hover) {
+      text-decoration: none;
+    }
+  }
+}
 .launchers {
   width: 90%;
   display: flex;
@@ -44,6 +123,9 @@
     justify-content: center;
     border: none;
   }
+  &-body {
+    padding: 0;
+  }
 }
 .selectdrop {
   &-txt {
@@ -52,6 +134,21 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .pic {
+    width: 100%;
+    &-ture {
+      margin-bottom: 0;
+      &_head {
+        width: 170px;
+      }
+    }
+  }
+  .see {
+    display: none;
+  }
+  .mainContainer {
+    width: 90%;
+  }
   .launchers {
     width: 100%;
       &-bot {
@@ -67,8 +164,13 @@
   .launchers {
     width: 100%;
     flex-direction: column;
-      &-bot {
+  }
+  .list {
+    &-group {
+      &-item {
+        font-size: .8em;
       }
+    }
   }
 }
   

@@ -124,15 +124,15 @@ export default () => {
             <h1 className="player-name">{player.nom}</h1>
             <h2 className="player-descr">{player.descr}</h2>
 
-            <div className="player-carac">
+            <div className="player-karac">
 
-              <img className="player-carac_avatar" id="caracPlayer" src={player.avatar} alt="avatar"/>
-              <div className="player-carac_contains">
-                <div className="player-carac_contains-comp">
+              <img className="player-karac_avatar" id="caracPlayer" src={player.avatar} alt="avatar"/>
+              <div className="player-karac_contains">
+                <div className="player-karac_contains-comp">
                   <p id="espace">Habileté</p>
                   <div id="spanbr">{player.habileté}</div>
                 </div>
-                <div className="player-carac_contains-comp">
+                <div className="player-karac_contains-comp">
                   <p id="espace">Blindage</p>
                   <div id="spanbr">{player.blindage}</div>
                 </div>
@@ -146,15 +146,15 @@ export default () => {
           <h1 className="foe-name">{foe.name}</h1>
           <h2 className="foe-descr">{foe.descr}</h2>
 
-          <div className="foe-carac">
+          <div className="foe-karac">
 
-            <img className="foe-carac_avatar" src={foe.avatar} alt="avatar"/>
-            <div className="foe-carac_contains">
-              <div className="player-carac_contains-comp">
+            <img className="foe-karac_avatar" src={foe.avatar} alt="avatar"/>
+            <div className="foe-karac_contains">
+              <div className="player-karac_contains-comp">
                 <p id="espace">Habileté</p>
                 <div id="spanbr">{foe.skill}</div>
               </div>
-              <div className="player-carac_contains-comp">
+              <div className="player-karac_contains-comp">
                 <p id="espace">Blindage</p>
                 <div id="spanbr">{foe.blindage}</div>
               </div>

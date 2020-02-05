@@ -46,7 +46,7 @@ export default ({ datas, foes }) => {
   };
 
   const activeClass = ClassNames(
-    'cv',
+    'mainContainer',
     {
       blured: showed || show || contactShow
     }
@@ -99,6 +99,7 @@ export default ({ datas, foes }) => {
                   { readable[item.id] && 
                     <h1
                       className="teteAccordion-titrecarte"
+                      id="sizeTitle"
                       style={{color: '#009465'}}>
                       {item.id}. {item.titreCarte} <div className="min"> - disponible !!! -</div> 
                     </h1>
@@ -106,6 +107,7 @@ export default ({ datas, foes }) => {
                   { !readable[item.id] && 
                     <h1
                       className="teteAccordion-titrecarte"
+                      id="sizeTitle"
                       style={{color: '#9c4563'}}>
                       {item.id}. {item.titreCarte} <div className="min"> - non disponible !!! -</div>  
                     </h1>

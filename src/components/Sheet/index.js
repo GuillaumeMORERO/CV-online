@@ -71,7 +71,7 @@ export default ({ foes }) => {
   };
 
   const activeClass = ClassNames(
-    'sheet',
+    'mainContainer',
     {
       blured: showed || showMess || show || contactShow
     }
@@ -122,7 +122,7 @@ export default ({ foes }) => {
 
         <div className="hud-carac">
           <div className="separateur-2">
-            <img className="pic-arrow_left-siz see" src="src/data/bluearrow.png" alt="arrow"/>
+            {/* <img className="pic-arrow_left-siz see" src="src/data/bluearrow.png" alt="arrow"/> */}
             <OverlayTrigger
               key="top"
               placement="top"
@@ -134,7 +134,7 @@ export default ({ foes }) => {
             >
               <p className="hud-carac_title">Habileté</p>
           </OverlayTrigger>
-            <img className="pic-arrow_right-siz see" src="src/data/bluearrow.png" alt="arrow"/>
+            {/* <img className="pic-arrow_right-siz see" src="src/data/bluearrow.png" alt="arrow"/> */}
           </div>
           <div className="hud-carac_display">
           Nombre de dé(s) : 
@@ -146,7 +146,7 @@ export default ({ foes }) => {
 
         <div className="hud-carac">
           <div className="separateur-2">
-            <img className="pic-arrow_left-siz see" src="src/data/bluearrow.png" alt="arrow"/>
+            {/* <img className="pic-arrow_left-siz see" src="src/data/bluearrow.png" alt="arrow"/> */}
             <OverlayTrigger
               key="top"
               placement="top"
@@ -158,7 +158,7 @@ export default ({ foes }) => {
             >
               <p className="hud-carac_title">Blindage</p>
           </OverlayTrigger>
-            <img className="pic-arrow_right-siz see" src="src/data/bluearrow.png" alt="arrow"/>
+            {/* <img className="pic-arrow_right-siz see" src="src/data/bluearrow.png" alt="arrow"/> */}
           </div>
           <div className="hud-carac_display">
             Point(s) de restant(s) : 
@@ -170,7 +170,7 @@ export default ({ foes }) => {
 
         <div className="hud-carac">
           <div className="separateur-2">
-            <img className="pic-arrow_left-siz see" src="src/data/bluearrow.png" alt="arrow"/>
+            {/* <img className="pic-arrow_left-siz see" src="src/data/bluearrow.png" alt="arrow"/> */}
             <OverlayTrigger
               key="top"
               placement="top"
@@ -182,7 +182,7 @@ export default ({ foes }) => {
             >
               <p className="hud-carac_title">Point(s) de Victoire</p>
           </OverlayTrigger>
-            <img className="pic-arrow_right-siz see" src="src/data/bluearrow.png" alt="arrow"/>
+            {/* <img className="pic-arrow_right-siz see" src="src/data/bluearrow.png" alt="arrow"/> */}
           </div>
           <div className="hud-carac_display">
             <p>Point(s) de restant(s) : </p>

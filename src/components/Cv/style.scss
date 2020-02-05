@@ -2,43 +2,7 @@
  * Import
  */
  @import 'src/styles/vars-custom';
-
-.cv {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  scroll-margin-top: 6em;
-  margin-top: 4em;
-  background-color: $transparent-black;
-  box-shadow: $customBoxShadow;
-  border-radius: 10px;
-}
-
-.pic {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  width: 100%;
-  &-arrow {
-    &_left {
-    transform: rotate(90deg);
-    }
-    &_right {
-      transform: rotate(270deg);
-      }
-  }
-  &-ture {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2em;
-    &_head {
-      width: 240px;
-    }
-  }
-}
-
+ 
 .elem {
   width: 80%;
  
@@ -48,30 +12,7 @@
   width: 100%;
   height: 1.5em;
 }
-.teteAccordion {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
-  &-titrecarte{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.5em;
-  }
-}
 
-.btn {
-  &-link {
-    &:hover {
-      text-decoration: none;
-    }
-    &:not(:hover) {
-      text-decoration: none;
-    }
-  }
-}
 .titreaccord {
   text-align: center;
   font-size: 1.25em;
@@ -89,46 +30,18 @@
   }
 }
 
-.list {
-  &-group {
-    border: none;
-    &-item {
-      border: none;
-      background-color: transparent;
-      color: white;
-      text-align: center;
-    }
-  }
-}
-.min {
-  font-size: .5em;
-  margin: 0 2em 0 2em;
-}
 .blured {
   filter: blur(5px);
 }
 
 @media only screen and (max-width: 1024px) {
-  .cv {
-    width: 90%;
-  }
-  .see {
-    display: none;
-  }
   .elem {
     width: 100%;
-  }
-  .teteAccordion {
-    font-size: .6em;
-    &-titrecarte {
-      
-    }
-  }
-  .min {
-    font-size: .6em;
   }
 }
 
 @media only screen and (max-width: 768px) {
-
+  #sizeTitle {
+    font-size: .8em;
+  }
 }

@@ -26,6 +26,7 @@
           }
         }
         &-infos {
+          width: 40%;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -35,6 +36,7 @@
           }
           &-reste {
             margin-bottom: 1em;
+            text-align: center;
           }
         }
       }
@@ -86,16 +88,20 @@
       &-corps {
         &_contains {
           flex-direction: column-reverse;
+          align-items: center;
           &-sections {
             width: 100%;
             margin-right: 0;
+          }
+          &-infos {
+
           }
         }
       }
     }
   }
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 500px) {
     .buy {
       &-titre {
         &-txt {
