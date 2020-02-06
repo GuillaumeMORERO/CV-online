@@ -51,11 +51,12 @@ export default () => {
       
     } 
     if (foe.blindage <= result) {
+      dispatch(blindageLoss(result));
       dispatch(changePV(foe.gain));
       dispatch(changeMessage('T\'as remporté une grande victoire... Et empoche ' + foe.gain + ' Points de Victoire !', 'good'));
       setTimeout(() => {
         dispatch(hideCombatModal())
-      }, 3000);
+      }, 2200);
     } 
   };
   const foeWin = (nbr) => {
@@ -70,7 +71,7 @@ export default () => {
       dispatch(changeMessage('T\as perdu ce combat... T\'en fais pas, il te reste toute une guerre !!', 'bad'));
       setTimeout(() => {
         dispatch(hideCombatModal());
-      }, 3000);
+      }, 2200);
     } 
   };
   const fighting = (habPlayer, habFoe) => {
@@ -101,6 +102,12 @@ export default () => {
     },
     {
       nul: category === 'nul'
+    }
+  );
+  const activHide = ClassNames(
+    'btncenter', 
+    {
+      noSee: player.blindage <= 0 || foe.blindage <= 0
     }
   );
 
@@ -164,12 +171,11 @@ export default () => {
         </section>
 
         </div>
-        <div className="btncenter">
+        <div className={activHide}>
           <button
             className="btncenter-fight"
             type="button"
             onClick={() => fighting(player.habileté, foe.skill)}
-            style={{display: player.blindage <= 0 ? 'none' : '' }}
           >
             Fight !!!
           </button>
@@ -177,7 +183,6 @@ export default () => {
             className="btncenter-fight"
             type="button"
             onClick={() => handleClose()}
-            style={{display: player.blindage <= 0 ? 'none' : '' }}
           >
             Fuite !!!
           </button>
