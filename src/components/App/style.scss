@@ -132,6 +132,22 @@
     text-shadow: $shadowText;
   }
 }
+.btncenter {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1em;
+  &-fight {
+    color: white;
+    background-color: $SF-blue-transparent;
+    border: $customBorder;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+  }
+}
+.noSee {
+  display:none;
+}
 
 @media only screen and (max-width: 1024px) {
   .pic {

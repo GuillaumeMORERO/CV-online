@@ -51,19 +51,6 @@
     }
   }
 }
-.btncenter {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 1em;
-  &-fight {
-    color: white;
-    background-color: $SF-blue-transparent;
-    border: $customBorder;
-    margin-top: 1em;
-    padding: 1em;
-    border-radius: 5px;
-  }
-}
 #espace {
   display: flex;
   align-items: center;
@@ -90,8 +77,6 @@
 .displayer {
   width: 100%;
   display: flex;
-  // justify-content: space-around;
-  // align-items: center;
   flex-direction: column;
   &-secondary {
     display: flex;

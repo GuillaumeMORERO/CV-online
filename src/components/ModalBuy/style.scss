@@ -42,6 +42,7 @@
       }
     }
     &-pied {
+      align-items: baseline;
       background-image: $gradient;
       display: flex;
       justify-content: center;
@@ -97,6 +98,14 @@
 
           }
         }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .buy {
+      &-pied {
+        align-items: center;
       }
     }
   }
